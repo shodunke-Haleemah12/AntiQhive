@@ -1,0 +1,212 @@
+* {
+  cursor: none !important;
+}
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/Satoshi-Light.otf') ;
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes rotate-border {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+@keyframes rotate-border {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+  
+}
+
+
+@keyframes colorShift {
+  0% { fill: #F4C20D; }
+  50% { fill: #FFD700; }
+  100% { fill: #F4C20D; }
+}
+
+/* Apply animation to all dots */
+.dot {
+  animation: blink 1s infinite, colorShift 2s infinite alternate;
+}
+
+/* Add slight delay for each dot to make it more lively */
+.dot:nth-child(1) { animation-delay: 0s, 0s; }
+.dot:nth-child(2) { animation-delay: 0.1s, 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.2s, 0.4s; }
+/* ... repeat or automate if many dots */
+
+
+
+
+@keyframes shimmer {
+  0% {
+    background-position: 500% 0;
+  }
+  100% {
+    background-position: -500% 0;
+  }
+}
+
+.shimmer-glow {
+  background-size: 200% auto;
+  animation: shimmer 1s linear infinite;
+}
+
+
+
+
+
+
+
+/* Soft shimmer animation */
+@keyframes shimmer {
+  0% {
+    filter: brightness(1);
+    transform: translateX(-2px);
+  }
+  50% {
+    filter: brightness(1.25);
+    transform: translateX(2px);
+  }
+  100% {
+    filter: brightness(1);
+    transform: translateX(-2px);
+  }
+}
+
+
+/*Hello Gold gradient + shimmer on text */
+.gold-text {
+  background: linear-gradient(
+    to right,
+    #f4c20d,
+    rgba(244, 194, 13, 0.6),
+    #f4c20d
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+  animation: goldShimmer 3s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(244, 194, 13, 0.4),
+               0 0 20px rgba(244, 194, 13, 0.3);
+}
+
+
+
+
+/* oue work process Shimmer animation */
+@keyframes goldShimmer {
+  0% {
+    filter: brightness(0.95);
+  }
+  50% {
+    filter: brightness(1.35);
+  }
+  100% {
+    filter: brightness(0.95);
+  }
+}
+
+
+
+/* service effect */
+@keyframes gradientMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: -300% 0%; }
+}
+
+.animate-gradient {
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes dotsZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.13); }
+  100% { transform: scale(1); }
+}
+
+.dots-zoom {
+  animation: dotsZoom 3s ease-in-out infinite;
+}
+
+
+
+section > div {
+  animation: fadeSlide 0.4s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* About us effect */
+
+/* Particle dots */
+.particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.731);
+  border-radius: 50%;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+.particles {
+  transform: translate(var(--px, 0), var(--py, 0));
+  transition: transform 0.2s ease-out;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* In your global CSS */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
