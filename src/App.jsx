@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Services from "./components/Services";
 import Aboutus from "./components/Aboutus";
 import Contact from "./components/Contact";
-import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
