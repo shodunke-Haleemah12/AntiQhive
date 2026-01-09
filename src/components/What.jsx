@@ -22,7 +22,7 @@ const What = () => {
                 <h3 className="font-bold text-3xl">MAKING IT BRILLIANT</h3>
 
                 <p className="text-2xl leading-10">
-                  At [AntiQhive], we help businesses stand out, connect,
+                  At [Antiqhive], we help businesses stand out, connect,
                   <br />
                   and grow through powerful digital experiences.
                   <br />

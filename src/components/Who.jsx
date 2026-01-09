@@ -20,7 +20,7 @@ const Who = () => {
           <h1 className="text-6xl text-white font-normal leading-tight transition-all duration-500 hover:text-[#f4c20d]/90 hover:tracking-wide">
             Your vision isn't just uncommon, For it's <br />
             your competitive advantage. For Since <br />
-            2016 we’ve helped 160+ organizations <br />
+            2022 we’ve helped 160+ organizations <br />
             rally around their own vision to unlock <br />
             growth and lead to their categories.
           </h1>

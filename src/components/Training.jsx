@@ -82,7 +82,7 @@ const Training = () => {
       <section className="bg-black text-white py-28 px-6 text-center">
         <div data-aos="fade-up" data-aos-duration="1500" >
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Professional Tech Training at <span className="text-[#f4c20d]">Anti</span>Qhive
+          Professional Tech Training at <span className="text-[#f4c20d]">Anti</span>qhive
         </h1>
         <p className="max-w-2xl mx-auto text-gray-300">
           Learn in-demand design and development skills through hands-on training

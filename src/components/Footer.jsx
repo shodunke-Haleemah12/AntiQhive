@@ -9,7 +9,7 @@ import con from "../assets/contact.svg"
 import mn from "../assets/Email.svg"
 import loc from "../assets/Location.png"
 import { NavLink } from 'react-router-dom';
-import icon from "../assets/icon.png"
+import icon from "../assets/logos.png"
 const Footer = () => {
   return (
     <div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <p className='text-white'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia temporibus nesciunt voluptates nisi, laboriosam repellendus est consequuntur cum deserunt vel.</p>
             </div> */}
              <div className='flex justify-between items-center pb-10 px-18 pt-10 text-white'>
-            <p className='text-lg font-normal ' >We help businesses have a lasting impact <br /> on customers by crafting captivating <br />Designs and Development that stands out.</p>
+            <p className='text-lg font-normal ' >We help businesses have a lasting impact <br /> on customers by crafting captivating <br />designs and development that stands out.</p>
             <div className='flex flex-col gap-4 items-center'>
                 <div className='flex flex-col gap-3 items-center'>
                     <img className='w-6' src={con} alt="" />
@@ -50,14 +50,16 @@ const Footer = () => {
                         <span className='text-xl hover:text-[#f4c20d]'>Contact Us</span>
                     </NavLink>
                 </div>
-                <p className='text-base font-light'>+234 803 7782 683</p>
+                <p className='text-base font-light'>+234 803 955 4311</p>
             </div>
             <div className='flex flex-col gap-4 items-center'>
                 <div className='flex flex-col gap-3 items-center'>
                     <img className='w-6' src={mn} alt="" />
-                    <span className='text-xl hover:text-[#f4c20d]'>Get in touch</span>
+                   <NavLink to="/Contact">
+                        <span className='text-xl hover:text-[#f4c20d]'>Get in touch</span>
+                     </NavLink>
                 </div>
-                <p className='text-base font-light'>hello@AntiQhive.io</p>
+                <p className='text-base font-light'>antiqhive@gmail.com</p>
             </div>
             <div className='flex flex-col gap-4 items-center'>
                 <div className='flex flex-col gap-3 items-center'>
@@ -79,10 +81,13 @@ const Footer = () => {
         </div>
         <div className='pb-2 h-px w-[90%] border-b border-[#262626] mx-auto'></div>
         
+<NavLink to="/">
+            
 <div className='text-lg text-white flex items-center justify-center pt-6 hover:text-[#f4c20d]'>
     <img className='hover:text-[#f4c20d] ' src={vec} alt="" />
-    <span className='font-bold'>AntiQhive2026</span>
+    <span className='font-bold'>Antiqhive 2026</span>
 </div>
+</NavLink>
         </div>
        
     </div>

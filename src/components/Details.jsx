@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // Initialize EmailJS with your public key
-emailjs.init("tzZw_baMMkMRAa40z"); // keep your public key here
+emailjs.init("wh14OpquFJpww3uDU"); // keep your public key here
 
 const Details = () => {
   // Form state
@@ -15,19 +15,22 @@ const Details = () => {
   // Selected projects
   const [selected, setSelected] = useState([]);
 
-
   // Toggle project selection
   const toggleSelection = (item) => {
     setSelected((prev) =>
-      prev.includes(item)
-        ? prev.filter((i) => i !== item)
-        : [...prev, item]
+      prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item]
     );
   };
 
   // Submit handler (EMAIL SEND)
   const handleSubmit = () => {
-    if (!firstName || !lastName || !email || !company || selected.length === 0) {
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !company ||
+      selected.length === 0
+    ) {
       alert("Please fill all required fields and select at least one project.");
       return;
     }
@@ -41,33 +44,31 @@ const Details = () => {
       projects: selected.join(", "),
     };
 
-
     // Send email using EmailJS
-    emailjs
-      .send("service_rxf5znd", "template_ogi8wlt", templateParams)
-      .then(
-        (response) => {
-          alert("Your application has been sent successfully 🚀");
+    emailjs.send("service_n9mp1md", "template_fd3wvxp", templateParams).then(
+      (response) => {
+        alert("Your application has been sent successfully 🚀");
 
-          // Reset form
-          setFirstName("");
-          setLastName("");
-          setEmail("");
-          setCompany("");
-          setMessage("");
-          setSelected([]);
-        },
-        (error) => {
-          // Show detailed error in console for debugging
-          console.error("EmailJS Error:", error);
-          alert(
-            `Something went wrong. Please try again.\nError: ${error.text || error.message}`
-          );
-        }
-      );
+        // Reset form
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setCompany("");
+        setMessage("");
+        setSelected([]);
+      },
+      (error) => {
+        // Show detailed error in console for debugging
+        console.error("EmailJS Error:", error);
+        alert(
+          `Something went wrong. Please try again.\nError: ${
+            error.text || error.message
+          }`
+        );
+      }
+    );
   };
 
-  
   return (
     <div className="flex gap-12 justify-center items-center bg-black pb-16 pt-16">
       {/* Form */}

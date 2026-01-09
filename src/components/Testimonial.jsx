@@ -5,6 +5,11 @@ import ima from "../assets/ima.png";
 import imag from "../assets/imag.png";
 import image from "../assets/image.png";
 import images from "../assets/images.png";
+import abdul from "../assets/abdulwahab adi.jpg"
+import akeem from "../assets/akim olu.jpg"
+import akin from "../assets/akin alabi.jpg"
+import andra from "../assets/andra.jpg"
+
 const Testimonial = () => {
   return (
     <div>
@@ -31,19 +36,19 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive is top-notch. They crafted a <br /> stunning website
+              Antiqhive is top-notch. They crafted a <br /> stunning website
               for my business, attentively <br /> addressing all my needs and
               providing <br /> exceptional customer service throughout the{" "}
               <br /> process. I highly recommend their services
             </p>
             <div className="flex gap-3 items-center">
-              <img className="rounded-full w-18 h-18" src={i} alt="" />
+              <img className="rounded-full w-18 h-18" src={abdul} alt="" />
               <div className="flex flex-col gap-2">
                 <h1
                   className="text-2xl text-[#f4c20d]"
                   style={{ fontFamily: "Nunito" }}
                 >
-                  Devon Lane
+                  Abdullahi Akin
                 </h1>
                 <p
                   className="text-base text-[#745874]"
@@ -59,13 +64,13 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive's UI/UX team crafted an intuitive,
+              Antiqhive's UI/UX team crafted an intuitive,
               <br /> visually stunning interface. User engagement <br />{" "}
               skyrocketed, and the seamless experience has <br /> received
               overwhelmingly positive feedback.{" "}
             </p>
             <div className="flex gap-3 items-center">
-              <img className="rounded-full w-18 h-18" src={im} alt="" />
+              <img className="rounded-full w-18 h-18" src={akeem} alt="" />
               <div className="flex flex-col gap-2">
                 <h1
                   className="text-2xl text-[#f4c20d]"
@@ -87,7 +92,7 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive built a high-performing, visually <br /> appealing
+              Antiqhive built a high-performing, visually <br /> appealing
               website. The site’s speed, <br /> responsiveness, and
               functionality have driven <br /> increased traffic and conversions
               for our <br /> business.
@@ -115,19 +120,19 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive’s software development team <br /> delivered a custom
+              Antiqhive’s software development team <br /> delivered a custom
               solution that is both robust <br /> and scalable. It has
               streamlined our operations <br /> and significantly improved our
               overall <br /> business efficiency.
             </p>
             <div className="flex gap-3 items-center">
-              <img className="rounded-full w-18 h-18" src={imag} alt="" />
+              <img className="rounded-full w-18 h-18" src={akin} alt="" />
               <div className="flex flex-col gap-2">
                 <h1
                   className="text-2xl text-[#f4c20d]"
                   style={{ fontFamily: "Nunito" }}
                 >
-                  Leslie Alexander
+                  Akinade Okiki
                 </h1>
                 <p
                   className="text-base text-[#745874]"
@@ -143,14 +148,14 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive expertly managed our branding, <br /> UI/UX, web,
+              Antiqhive expertly managed our branding, <br /> UI/UX, web,
               mobile, and software <br /> development needs. Their cohesive,
               high- <br />
               quality work has elevated our business and <br /> positioned us
               strongly in the market.
             </p>
             <div className="flex gap-3 items-center">
-              <img className="rounded-full w-18 h-18" src={image} alt="" />
+              <img className="rounded-full w-18 h-18" src={andra} alt="" />
               <div className="flex flex-col gap-2">
                 <h1
                   className="text-2xl text-[#f4c20d]"
@@ -172,7 +177,7 @@ const Testimonial = () => {
               className="text-base text-[#ffffff]"
               style={{ fontFamily: "Stringer-Trial" }}
             >
-              AntiQhive created a user-friendly, <br /> beautifully designed
+              Antiqhive created a user-friendly, <br /> beautifully designed
               mobile app that has <br /> become integral to our business.
               Customers <br />
               love its functionality, and it has enhanced our <br /> overall
@@ -185,13 +190,13 @@ const Testimonial = () => {
                   className="text-2xl text-[#f4c20d]"
                   style={{ fontFamily: "Nunito" }}
                 >
-                  Dianne Russell
+                  Caleb Austin
                 </h1>
                 <p
                   className="text-base text-[#745874]"
                   style={{ fontFamily: "Stringer-Trial" }}
                 >
-                  eBay
+                  Clue Mob
                 </p>
               </div>
             </div>

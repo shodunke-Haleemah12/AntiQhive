@@ -33,7 +33,7 @@ const Aboutus = () => {
           </div>
           <div data-aos="fade-up" data-aos-duration="2000">
             <p className="text-2xl text-center text-[#ffffff]">
-              AntiQhive is a digital creative branding agency that combines
+              Antiqhive is a digital creative branding agency that combines
               creativity, innovation, technology and <br /> industry knowledge
               to help businesses create a unique brand identity that stands out
               and <br /> captivates the right audience. We help to nurture every

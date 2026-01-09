@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import person1 from "../assets/imag.png";
-import person2 from "../assets/im.png";
-import person3 from "../assets/ima.png";
-import person4 from "../assets/image.png";
+import person1 from "../assets/abdulwahab adi.jpg";
+import person2 from "../assets/akim olu.jpg";
+import person3 from "../assets/akin alabi.jpg";
+import person4 from "../assets/andra.jpg";
 
 const testimonials = [
   {
     text: "Thanks to the efforts of the team, our company's website is now cutting-edge and user-friendly. Their digital marketing expertise is top notch.",
-    name: "Leslie Alexander",
+    name: "Abdullahi Akin",
     company: "Louis Vuittony",
     image: person1,
   },
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     text: "Professional, creative, and reliable. I highly recommend them for any digital project.",
-    name: "Annette Black",
+    name: "Akinade Okiki",
     company: "EBay",
     image: person3,
   },
